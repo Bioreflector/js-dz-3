@@ -77,3 +77,13 @@ card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '3', '8'))
 card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '4', '8'))
 // put the div into the DOM just before the wrapper element
 wrapper.insertAdjacentElement('beforebegin', card)
+// Bonus, put a delete Button on each card so when you click it, the whole card is removed
+const cardBtn = document.querySelectorAll('.cardBtn')
+function removePlayerCard(e){
+    const element = e.target
+    element.closest('.playerCard').remove()
+}
+cardBtn.forEach((btn) => {
+    btn.addEventListener('click', removePlayerCard)
+})
+// Метод Element.closest() возвращает ближайший родительский элемент (или сам элемент), который соответствует заданному CSS-селектору или null, если таковых элементов вообще нет.
