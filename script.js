@@ -47,3 +47,7 @@ const fragment = range.createContextualFragment(strElementHtml)
 const element = fragment.firstElementChild
 // put this div before the unordered list from above
 wrapper.insertAdjacentElement('afterbegin', element)
+// add a class to the second paragraph called warning
+// remove the first paragraph
+element.lastChild.classList.add('paragraph')
+element.firstChild.remove()
