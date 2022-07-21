@@ -75,3 +75,5 @@ card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '1', '5'))
 card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '2', '6'))
 card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '3', '8'))
 card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '4', '8'))
+// put the div into the DOM just before the wrapper element
+wrapper.insertAdjacentElement('beforebegin', card)
