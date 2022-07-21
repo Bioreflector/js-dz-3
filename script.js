@@ -5,3 +5,22 @@ wrapper.classList.add('wrapper')
 // put it into the body
 const body = document.querySelector('body')
 body.insertAdjacentElement('afterbegin', wrapper)
+// make an unordered list
+// add three list items with the words "one, two, three" in them
+const listText = ['one', 'two', 'trhee']
+function createListItem(text) {
+    const listItem = document.createElement('li')
+    listItem.classList.add('list-item')
+    listItem.innerText = text
+    return listItem
+}
+function createList(listText) {
+    const list = document.createElement('ul')
+    list.classList.add('list')
+    const listItemArr = listText.map(createListItem)
+    listItemArr.forEach((li) => {
+        list.insertAdjacentElement('beforeend', li)
+    });
+    return list
+}
+console.log(createList(listText))
