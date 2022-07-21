@@ -29,3 +29,5 @@ function addToWrapper(itemAdd) {
     wrapper.insertAdjacentElement('beforeend', itemAdd)
 }
 addToWrapper(createList(listText))
+// create an image
+const img = document.createElement('img')
