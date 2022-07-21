@@ -23,7 +23,6 @@ function createList(listText) {
     });
     return list
 }
-console.log(createList(listText))
 // put that list into the above wrapper
 function addToWrapper(itemAdd) {
     wrapper.insertAdjacentElement('beforeend', itemAdd)
@@ -41,3 +40,8 @@ img.style = 'width: 200px'
 img.classList.add('cute')
 img.alt = 'Cute Puppy'
 wrapper.insertAdjacentElement('beforebegin' , img)
+// with HTML string, make a div, with two paragraphs inside of it
+const strElementHtml = "<div><p></p><p></p></div>"
+const range = document.createRange()
+const fragment = range.createContextualFragment(strElementHtml)
+const element = fragment.firstElementChild
