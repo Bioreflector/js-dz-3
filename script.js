@@ -24,3 +24,8 @@ function createList(listText) {
     return list
 }
 console.log(createList(listText))
+// put that list into the above wrapper
+function addToWrapper(itemAdd) {
+    wrapper.insertAdjacentElement('beforeend', itemAdd)
+}
+addToWrapper(createList(listText))
