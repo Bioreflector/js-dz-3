@@ -70,3 +70,8 @@ function generatePlayerCard(name, age, height) {
 // make a new div with a class of cards
 const card = document.createElement('div')
 card.classList.add('card')
+// make 4 player cards using generatePlayerCard
+card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '1', '5'))
+card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '2', '6'))
+card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '3', '8'))
+card.insertAdjacentElement('beforeend', generatePlayerCard('Jeck', '4', '8'))
