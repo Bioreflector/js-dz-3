@@ -45,3 +45,5 @@ const strElementHtml = "<div><p></p><p></p></div>"
 const range = document.createRange()
 const fragment = range.createContextualFragment(strElementHtml)
 const element = fragment.firstElementChild
+// put this div before the unordered list from above
+wrapper.insertAdjacentElement('afterbegin', element)
