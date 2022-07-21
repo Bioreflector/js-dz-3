@@ -33,4 +33,11 @@ addToWrapper(createList(listText))
 const img = document.createElement('img')
 // set the source to an image
 img.src = 'https://picsum.photos/200'
-
+// set the width to 250
+// add a class of cute
+// add an alt of Cute Puppy
+// Append that image to the wrapper
+img.style = 'width: 200px'
+img.classList.add('cute')
+img.alt = 'Cute Puppy'
+wrapper.insertAdjacentElement('beforebegin' , img)
