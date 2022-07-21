@@ -49,5 +49,21 @@ const element = fragment.firstElementChild
 wrapper.insertAdjacentElement('afterbegin', element)
 // add a class to the second paragraph called warning
 // remove the first paragraph
-element.lastChild.classList.add('paragraph')
+element.lastChild.classList.add('warning')
 element.firstChild.remove()
+// create a function called generatePlayerCard that takes in three arguments: name, age, and height
+function generatePlayerCard(name, age, height) {
+    const cardBox = document.createElement('div')
+    cardBox.classList.add('playerCard')
+    const cardTitle = document.createElement('h3')
+    cardTitle.innerText = `${name} --- ${age}`
+    const cardText = document.createElement('p')
+    const cardBtn = document.createElement('button')
+    cardBtn.classList.add('cardBtn')
+    cardBtn.innerText = 'remove'
+    cardText.innerText = `They are ${height} and ${age} years old. In Dog years this person would be AGEINDOGYEARS. That would be a tall dog!`
+    cardBox.insertAdjacentElement('beforeend', cardTitle)
+    cardBox.insertAdjacentElement('beforeend', cardText)
+    cardBox.insertAdjacentElement('beforeend', cardBtn)
+    return cardBox
+}
