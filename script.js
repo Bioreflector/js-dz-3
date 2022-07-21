@@ -67,3 +67,6 @@ function generatePlayerCard(name, age, height) {
     cardBox.insertAdjacentElement('beforeend', cardBtn)
     return cardBox
 }
+// make a new div with a class of cards
+const card = document.createElement('div')
+card.classList.add('card')
