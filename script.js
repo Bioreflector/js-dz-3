@@ -87,3 +87,8 @@ cardBtn.forEach((btn) => {
     btn.addEventListener('click', removePlayerCard)
 })
 // Метод Element.closest() возвращает ближайший родительский элемент (или сам элемент), который соответствует заданному CSS-селектору или null, если таковых элементов вообще нет.
+
+// remove listener fom all button
+cardBtn.forEach((btn) => {
+    btn.removeEventListener('click', removePlayerCard)
+})
