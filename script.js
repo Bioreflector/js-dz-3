@@ -31,3 +31,6 @@ function addToWrapper(itemAdd) {
 addToWrapper(createList(listText))
 // create an image
 const img = document.createElement('img')
+// set the source to an image
+img.src = 'https://picsum.photos/200'
+
